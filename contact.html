@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="UTF-8">
+    <title>Dan's Portraits and Caricatures - Pet Portraits and Caricatures</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/site.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- Some javascript I wrote renders the menu in the div with an ID of "menu", so don't remove or change the div below. -->
+        <div class="row" id="menu"></div>
+
+    </div>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/handlebars-v1.3.0.js"></script>
+    <script src="js/render-template.js"></script>
+    <script>
+        var rendered_html = render('Menu', '');
+        $('#menu').append(rendered_html);  
+    </script>
+</body>
+</html>

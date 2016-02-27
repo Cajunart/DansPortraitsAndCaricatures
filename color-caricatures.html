@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="UTF-8">
+    <title>Dan's Portraits and Caricatures - Color Caricatures</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/site.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation bar -->
+        <div class="row" id="menu"></div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Color Caricatures</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                Something here about color caricatures 
+            </div>
+            <div class="col-sm-9">
+                <ul class="row">
+                    <li class="col-sm-4 thumbnail">
+                        <a href="#" data-toggle="modal" data-target="#morgan">
+                            <img src="images/Caric/10Bean.jpg" alt="" class="img-responsive">
+                        </a>
+                    </li>
+                    <li class="col-sm-4 thumbnail">
+                        <a href="#" data-toggle="modal" data-target="#bean">
+                            <img src="images/Caric/2King.jpg" class="img-responsive">
+                        </a>
+                    </li>
+                    <li class="col-sm-4 thumbnail">
+                        <a href="#" data-toggle="modal">
+                            <img src="images/Caric/3.jpg" class="img-responsive">
+                        </a>
+                    </li>
+                </ul>
+                <ul class="row">
+                    <li class="col-sm-4 thumbnail">
+                        <a href="#" data-toggle="modal">  
+                            <img src="images/Caric/4.jpg" class="img-responsive">
+                        </a>
+                    </li>
+
+                    <li class="col-sm-4 thumbnail">
+                        <a href="#" data-toggle="modal">  
+                            <img src="images/Caric/5.jpg" class="img-responsive">
+                        </a>
+                    </li>
+
+                    <li class="col-sm-4 thumbnail">
+                        <a href="#" data-toggle="modal">  
+                            <img src="images/Caric/6.jpg" class="img-responsive">
+                        </a>
+                    </li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    <!-- From this <div id="morgan" to the closing </div> before the script tags is the "popup" -->
+    <!-- The image that triggers this popup needs to have data-target="#morgan" (where morgan is whatever the id is below) on the a -->
+    <div id="morgan" class="modal fade" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                    <h3 class="modal-title">Morgan Freeman Caricature</h3>
+                </div>
+                <div class="modal-body">
+                    <p><img src="images/Color/Morgan.jpg" alt="Morgan Freeman" class="img-responsive"></p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- This is the end of the popup -->
+    <div id="bean" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+                        <h3 class="modal-title">Mr. Bean Caricature</h3>
+                    </div>
+                    <div class="modal-body">
+                        <p><img src="images/Color/Bean.jpg" alt="Mr. Bean" class="img-responsive"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/handlebars-v1.3.0.js"></script>
+    <script src="js/render-template.js"></script>
+    <script>
+        var rendered_html = render('Menu', '');
+        $('#menu').append(rendered_html);  
+    </script>
+</body>
+</html>

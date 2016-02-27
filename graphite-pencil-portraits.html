@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="UTF-8">
+    <title>Dan's Portraits and Caricatures - Graphite Pencil Portraits</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/site.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation bar -->
+        <div class="row" id="menu"></div>
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Graphite Pencil Portraits</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                Graphite pencil portrait done on quality acid free paper  
+            </div>
+            <div class="col-sm-9">
+                <ul>
+                    <li class="col-sm-4 thumbnail">
+                        <a href="#" data-toggle="modal">
+                            <img src="images/Portraits/Chandler.jpg" alt="" class="img-responsive">
+                        </a>
+                    </li>
+                    <li class="col-sm-4 thumbnail">
+                        <a href="#" data-toggle="modal">
+                            <img src="images/Portraits/karate.jpg" alt="" class="img-responsive">
+                        </a>
+                    </li>
+                    <li class="col-sm-4 thumbnail">
+                        <a href="#" data-toggle="modal">
+                            <img src="images/Portraits/mitchell.jpg" alt="" class="img-responsive">
+                        </a>
+                    </li>
+              </ul>
+            </div>
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/handlebars-v1.3.0.js"></script>
+    <script src="js/render-template.js"></script>
+    <script>
+        var rendered_html = render('Menu', '');
+        $('#menu').append(rendered_html);  
+    </script>
+</body>
+</html>
